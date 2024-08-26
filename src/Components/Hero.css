@@ -1,0 +1,95 @@
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.heroAbout{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.heroAbout h1{
+     
+    padding-top: 4rem;
+    font-size: 3rem !important;
+}
+img{
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+}
+.hero-text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-text h1{
+    font-size: 5rem;
+    font-weight: 800;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space:nowrap;
+    transition: 0.3s ease-in-out;
+}
+.hero-text h1:hover{
+    transform: scale(1.5);
+}
+.hero-text p{
+    padding: 2rem 0 3rem 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* white-space: nowrap; */
+}
+.hero-text .show{
+    text-decoration: none;
+    padding: 1.5rem 2.5rem;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 2px;
+    box-shadow: black;
+    
+}
+.show:hover{
+    background-color: black;
+    color: white;
+}
+.hero-text .showAbout{
+    display: none;
+}
+
+@media screen and (max-width: 855px) {
+    /* .hero{
+        width: 100%;
+    } */
+    .hero-text h1{
+        font-size: 2.2rem;
+        padding: 10px 20px;
+        white-space: nowrap;
+        transition: none;
+    }
+    .hero-text h1:hover{
+        transform:none;
+    }
+    .hero-text p{
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+}
+.hero-text .show{
+    
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    /* font-weight: 700; */
+    
+}
+}

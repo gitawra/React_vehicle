@@ -1,0 +1,76 @@
+.cars{
+    margin: 4rem 6rem;
+}
+.cars h1{
+    font-size: 3rem;
+}
+.first-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8.5rem;
+}
+.first-des-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12.5rem;
+}
+.des-text{
+    width: 45%;
+    text-align: start;
+    font-size: 1.1rem;
+}
+.des-text h2{
+    padding: 1rem;
+}
+.image{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+}
+.image img{
+    width: 49%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: -1px 1px 62px -18px whitesmoke;
+}
+.image img:nth-child(2){
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+@media screen and (max-width:850px) {
+    .cars{
+        margin: 4rem 2rem;
+    }
+    .first-des{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+    .first-des-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+    .des-text{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        /* height: 300px; */
+        margin: 1.8rem 0;
+    }
+    .image img{
+        height: 300px;
+    }
+}
